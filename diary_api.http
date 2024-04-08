@@ -1,0 +1,6 @@
+@diary_api_HostAddress = http://localhost:5225
+
+GET {{diary_api_HostAddress}}/weatherforecast/
+Accept: application/json
+
+###

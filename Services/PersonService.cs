@@ -5,10 +5,10 @@ public static class PersonService{
   static List<Person> Persons { get; }
   static int nextId = 3;
   static PersonService(){
-    Persons = new List<Person>{
-      new Person {Id = 1, FirstName = "Anna", LastName = "Smith"},
-      new Person {Id = 3, FirstName = "John", LastName = "Smith"}
-    };
+    Persons = [
+      new() {Id = 1, FirstName = "Anna", LastName = "Smith"},
+      new() {Id = 3, FirstName = "John", LastName = "Smith"}
+    ];
   }
 
   public static List<Person> GetAll() => Persons;
